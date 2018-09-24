@@ -9,4 +9,60 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/events.js" charset="utf-8"></script>
     <?php wp_head(); ?>
   </head>
+
+  <div class="header">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6">
+                  <a href="<?php echo get_site_url(); ?>">
+                      <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" class="logo" alt="">
+                  </a>
+              </div>
+
+              <div class="col-sm-6 text-right">
+                  <div class="switch-lang">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  EN
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#" class="active">
+                                  FR
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12">
+              <div class="menu">
+                  <ul>
+                      <li>
+                          <a href="#" class="active">
+                              Accueil
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">L'équipe</a>
+                      </li>
+                      <li>
+                          <a href="#">Compétences</a>
+                      </li>
+                      <li>
+                          <a href="#">Nos métiers</a>
+                      </li>
+                      <li>
+                          <a href="#">Références</a>
+                      </li>
+                      <li>
+                          <a href="#">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
   <body <?php body_class(); ?>>
