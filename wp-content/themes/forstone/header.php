@@ -15,7 +15,7 @@
   <div class="header">
       <div class="container">
           <div class="row">
-              <div class="col-sm-4 col-xs-2">
+              <div class="col-sm-4 hidden-md hidden-lg col-xs-2">
                   <div class="button-mobile">
                       <div class="barre"></div>
                       <div class="barre"></div>

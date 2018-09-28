@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Homepage
+*/?>
+
 <?php get_header(); ?>
 <div class="background-page" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/images/background-home.jpg');">
 </div>
