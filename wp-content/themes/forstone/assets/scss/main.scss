@@ -180,6 +180,22 @@ body{
     }
 }
 
+.button-mobile{
+    width: 20px;
+    margin-top: 25px;
+    z-index: 400;
+    @include transition(.4s);
+    position: relative;
+
+    .barre{
+        height: 3px;
+        background: #FFF;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        @include transition(.4s);
+    }
+}
+
 .footer{
     position: fixed;
     bottom: 50px;
@@ -187,4 +203,140 @@ body{
     font-size: 14px;
     line-height: 17px;
     opacity: .9;
+}
+
+
+
+@media (max-width: 768px) {
+    .header{
+        background: transparent;
+
+        .container-logo{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 240px;
+            position: relative;
+            z-index: 400;
+        }
+        .logo{
+            width: 100%;
+        }
+        .switch-lang{
+            padding-top: 20px;
+            position: relative;
+            z-index: 400;
+            ul{
+                padding-left: 0;
+
+                li{
+                    &:before{
+                        display: none;
+                    }
+
+                    a{
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .header .menu{
+        position: fixed;
+        top: 0;
+        padding-top: 120px;
+        left: 0;
+        background-image: url('../images/background-menu.jpg');
+        background-size: cover;
+        height: 100%;
+        z-index: 300;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(.5s);
+
+        ul{
+            padding-left: 0;
+            li{
+                display: block;
+                margin: 20px 0;
+                padding: 0 40px;
+
+                a{
+                    font-size: 17px;
+                    color: #333;
+                    font-weight: 500;
+                    padding-left: 20px;
+                    position: relative;
+                    &:before{
+                        display: none;
+                    }
+
+                    &.active:after, &:after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 10px;
+                        height: 10px;
+                        background: $red;
+                        display: inline-block;
+                        margin-right: 10px;
+                        margin-left: 0;
+                        top: 6px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-container.home .intro-home{
+        display: none;
+    }
+
+    .menu-open{
+        .header .menu{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .button-mobile{
+            margin-top: 30px;
+            .barre{
+
+                &:nth-child(1){
+                    @include rotate(45deg);
+                }
+                &:nth-child(2){
+                    @include rotate(-45deg);
+                    margin-top: -7px;
+                }
+                &:nth-child(3){
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .footer{
+        width: 100%;
+
+        .link-contact{
+            color: #FFF;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+
+    .page-container.home{
+        margin-top: 180px;
+    }
+
+    .nav-home li a:before{
+        width: 11px;
+        height: 11px;
+        left: -22px;
+        top: 5px;
+    }
 }

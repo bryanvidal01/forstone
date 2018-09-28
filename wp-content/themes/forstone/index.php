@@ -36,10 +36,18 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 hidden-xs hidden-sm">
                 <div class="footer">
                     Forstone Mentions légales <br>
                     Réalisation du site : M21 Production
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 visible-xs visible-sm text-center">
+                <div class="footer">
+                    <a href="#" class="link-contact">Contact</a>
                 </div>
             </div>
         </div>
