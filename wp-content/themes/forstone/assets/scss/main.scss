@@ -5,6 +5,11 @@ $grey: #4c4d4f;
 body{
     background: #fff;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
 }
 
 
@@ -205,9 +210,34 @@ body{
     opacity: .9;
 }
 
+.white{
+    color: #FFF
+}
+
 .background-white{
     background: #FFF;
     padding: 60px;
+    position: relative;
+
+    .button-back{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 3;
+        font-weight: 500;
+        font-size: 14px;
+        background: $red;
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        @include transition(.3s);
+        border: 1px solid $red;
+        &:hover{
+            background: #FFF;
+            color: $red;
+            text-decoration: none;
+        }
+    }
 }
 
 .title{
@@ -293,6 +323,24 @@ ul{
     }
 }
 
+.info-avatar{
+    border-left: 1px solid $red;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    .name{
+        font-size: 22px;
+    }
+
+    .poste{
+        font-size: 16px;
+    }
+
+    .sub-info{
+        margin-top: 10px;
+    }
+
+}
+
 .content{
     font-size: 16px;
     text-align: justify;
@@ -300,6 +348,69 @@ ul{
 
 body{
     overflow-x: hidden;
+}
+
+.content-wysiwyg{
+    h2{
+        font-size: 18px;
+        color: #FFF;
+        position: relative;
+        padding-left: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: 500;
+        margin-bottom: 20px;
+
+
+
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: $red;
+            left: 0;
+            top: 7px;
+        }
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+.list-social{
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 0;
+    margin-bottom: 30px;
+    li{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #FFF;
+        line-height: 40px;
+        position: relative;
+        background: #666;
+        margin: 0 20px;
+        svg{
+            max-width: 30px;
+            max-height: 20px;
+            position: absolute;
+            top: 50%;
+            @include translate(-50%, -50%);
+        }
+
+        &:nth-child(2){
+            svg{
+                max-height: 13px;
+                margin-top: -1px;
+            }
+        }
+    }
 }
 
 
@@ -440,9 +551,8 @@ body{
         margin-top: 10px;
 
         .background-white{
-            width: calc(100% + 70px);
-            margin-left: -35px;
-            overflow-x: hidden;
+            width: calc(100% + 50px);
+            margin-left: -25px;
             margin-top: 20px;
             margin-bottom: 70px;
 
