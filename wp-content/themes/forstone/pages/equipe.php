@@ -1,10 +1,15 @@
 <?php
 /*
 Template Name: Equipe
-*/?>
+*/
+
+$imgBackground = get_field('image_background');
+$title = get_field('title');
+$content = get_field('content');
+?>
 
 <?php get_header(); ?>
-<div class="background-page" style="background-image: url('https://images.pexels.com/photos/1449843/pexels-photo-1449843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+<div class="background-page" style="background-image: url('<?php echo get_background($imgBackground); ?>');">
 </div>
 
 <div class="page-container home page-cms">
@@ -12,14 +17,19 @@ Template Name: Equipe
         <div class="row">
             <div class="col-md-5">
                 <div class="background-white">
-                    <div class="title">
-                        L'esprit Forstone
-                    </div>
-                    <div class="content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
+                    <?php if ($title): ?>
+                        <div class="title">
+                            <?php echo $title; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if ($content): ?>
+                        <div class="content">
+                            <p>
+                                <?php echo $content; ?>
+                            </p>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="col-md-6 col-md-offset-1">
@@ -28,126 +38,61 @@ Template Name: Equipe
                         L'équipe
                     </div>
                     <ul>
-                        <li class="item-equipe">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="http://fakeimg.pl/200x200/" alt="" class="image-avatar">
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="content-team">
-                                        <div class="name">
-                                            Stéphane Perrin
+
+
+                        <?php
+                        $args = array(
+                        	'post_type' => 'equipe',
+                        	'posts_per_page' => -1,
+                            'orderby' => 'date',
+                            'order' => 'ASC'
+                        );
+
+                        $the_query = new WP_Query( $args );
+
+                        if ( $the_query->have_posts() ) {
+                        	echo '<ul>';
+                        	while ( $the_query->have_posts() ) {
+                        		$the_query->the_post();
+                                $currentPost = get_field('current_post');
+                                $avatarID = get_field('avatar');
+
+                                ?>
+
+
+                                <li class="item-equipe">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <?php if ($avatarID): ?>
+                                                <img src="<?php echo wp_get_attachment_image_src($avatarID, '200x200')[0]; ?>" alt="" class="image-avatar">
+                                            <?php endif; ?>
                                         </div>
-                                        <div class="poste">
-                                            Associé
+                                        <div class="col-sm-8">
+                                            <div class="content-team">
+                                                <div class="name">
+                                                    <?php echo get_the_title(); ?>
+                                                </div>
+                                                <?php if ($currentPost): ?>
+                                                    <div class="poste">
+                                                        <?php echo $currentPost; ?>
+                                                    </div>
+                                                <?php endif; ?>
+
+                                                <a href="<?php echo get_the_permalink(); ?>" class="link-more">
+                                                    <?php echo __('En savoir plus', 'orizon'); ?>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <a href="#" class="link-more">
-                                            En savoir plus
-                                        </a>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-equipe">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="http://fakeimg.pl/200x200/" alt="" class="image-avatar">
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="content-team">
-                                        <div class="name">
-                                            Stéphane Perrin
-                                        </div>
-                                        <div class="poste">
-                                            Associé
-                                        </div>
-                                        <a href="#" class="link-more">
-                                            En savoir plus
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-equipe">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="http://fakeimg.pl/200x200/" alt="" class="image-avatar">
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="content-team">
-                                        <div class="name">
-                                            Stéphane Perrin
-                                        </div>
-                                        <div class="poste">
-                                            Associé
-                                        </div>
-                                        <a href="#" class="link-more">
-                                            En savoir plus
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-equipe">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="http://fakeimg.pl/200x200/" alt="" class="image-avatar">
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="content-team">
-                                        <div class="name">
-                                            Stéphane Perrin
-                                        </div>
-                                        <div class="poste">
-                                            Associé
-                                        </div>
-                                        <a href="#" class="link-more">
-                                            En savoir plus
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-equipe">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="http://fakeimg.pl/200x200/" alt="" class="image-avatar">
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="content-team">
-                                        <div class="name">
-                                            Stéphane Perrin
-                                        </div>
-                                        <div class="poste">
-                                            Associé
-                                        </div>
-                                        <a href="#" class="link-more">
-                                            En savoir plus
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-equipe">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="http://fakeimg.pl/200x200/" alt="" class="image-avatar">
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="content-team">
-                                        <div class="name">
-                                            Stéphane Perrin
-                                        </div>
-                                        <div class="poste">
-                                            Associé
-                                        </div>
-                                        <a href="#" class="link-more">
-                                            En savoir plus
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                                </li>
+
+
+
+                        	<?php }
+                        	echo '</ul>';
+                        	wp_reset_postdata();
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>

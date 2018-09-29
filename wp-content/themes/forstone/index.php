@@ -1,41 +1,37 @@
 <?php
 /*
 Template Name: Homepage
-*/?>
+*/
+
+$imgBackground = get_field('image_background');
+$intro = get_field('introduction');
+
+?>
 
 <?php get_header(); ?>
-<div class="background-page" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/images/background-home.jpg');">
+
+<div class="background-page" style="background-image: url('<?php echo get_background($imgBackground); ?>');">
+
 </div>
 
 <div class="page-container home">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <div class="intro-home">
-                    Forstone vous accompagne et répond parfaitement a vos besoins.
-                </div>
+                <?php if ($intro): ?>
+                    <div class="intro-home">
+                        Forstone vous accompagne et répond parfaitement a vos besoins.
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-6">
                 <div class="nav-home">
-                    <ul>
-                        <li>
-                            <a href="#">L'équipe</a>
-                        </li>
-                        <li>
-                            <a href="#">Compétences</a>
-                        </li>
-                        <li>
-                            <a href="#">Nos métiers</a>
-                        </li>
-                        <li>
-                            <a href="#">Références</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
+                    <?php echo wp_nav_menu([
+                        'menu'=>'home',
+                        'menu_class'=>''
+                    ]); ?>
                 </div>
             </div>
         </div>

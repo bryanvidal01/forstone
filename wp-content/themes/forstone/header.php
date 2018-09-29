@@ -47,28 +47,11 @@
           </div>
           <div class="col-sm-12">
               <div class="menu">
-                  <ul>
-                      <li>
-                          <a href="#" class="active">
-                              Accueil
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">L'équipe</a>
-                      </li>
-                      <li>
-                          <a href="#">Compétences</a>
-                      </li>
-                      <li>
-                          <a href="#">Nos métiers</a>
-                      </li>
-                      <li>
-                          <a href="#">Références</a>
-                      </li>
-                      <li>
-                          <a href="#">Contact</a>
-                      </li>
-                  </ul>
+                  <?php echo wp_nav_menu([
+                      'menu'=>'principal',
+                      'menu_class'=>''
+                  ]); ?>
+
               </div>
           </div>
       </div>
