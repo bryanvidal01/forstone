@@ -31,13 +31,19 @@ $content = get_field('content');
                         </div>
                     <?php endif; ?>
                 </div>
+                <div class="hidden-xs hidden-sm">
+                    <div class="footer-desk">
+                        Forstone Mentions légales<br/>
+                        Réalisation du site : M21 Production
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 col-md-offset-1">
                 <div class="container-equipe">
                     <div class="title white">
                         L'équipe
                     </div>
-                    <ul>
+
 
 
                         <?php
@@ -51,7 +57,7 @@ $content = get_field('content');
                         $the_query = new WP_Query( $args );
 
                         if ( $the_query->have_posts() ) {
-                        	echo '<ul>';
+                        	echo '<ul class="container-fluid">';
                         	while ( $the_query->have_posts() ) {
                         		$the_query->the_post();
                                 $currentPost = get_field('current_post');
@@ -64,7 +70,9 @@ $content = get_field('content');
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <?php if ($avatarID): ?>
-                                                <img src="<?php echo wp_get_attachment_image_src($avatarID, '200x200')[0]; ?>" alt="" class="image-avatar">
+                                                <a href="<?php echo get_the_permalink(); ?>">
+                                                    <img src="<?php echo wp_get_attachment_image_src($avatarID, '200x200')[0]; ?>" alt="" class="image-avatar">
+                                                </a>
                                             <?php endif; ?>
                                         </div>
                                         <div class="col-sm-8">
@@ -93,17 +101,6 @@ $content = get_field('content');
                         	wp_reset_postdata();
                         }
                         ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 hidden-sm hidden-xs">
-                <div class="footer">
-                    Forstone Mentions légales<br/>
-                    Réalisation du site : M21 Production
                 </div>
             </div>
         </div>

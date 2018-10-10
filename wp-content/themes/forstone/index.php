@@ -11,7 +11,6 @@ $intro = get_field('introduction');
 <?php get_header(); ?>
 
 <div class="background-page" style="background-image: url('<?php echo get_background($imgBackground); ?>');">
-
 </div>
 
 <div class="page-container home">
@@ -36,9 +35,10 @@ $intro = get_field('introduction');
             </div>
         </div>
 
+
         <div class="row">
             <div class="col-sm-6 hidden-xs hidden-sm">
-                <div class="footer">
+                <div class="footer-desk home">
                     Forstone Mentions légales <br>
                     Réalisation du site : M21 Production
                 </div>

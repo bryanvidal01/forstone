@@ -2,6 +2,8 @@
 
 $red: #b71d21;
 $grey: #4c4d4f;
+
+
 body{
     background: #fff;
     -webkit-font-smoothing: antialiased;
@@ -12,6 +14,10 @@ img{
     max-width: 100%;
 }
 
+
+a:focus{
+    outline: none;
+}
 
 .background-page{
     position: fixed;
@@ -85,40 +91,37 @@ img{
 
         li{
             display: inline-block;
-            margin: 0 4px;
 
             a{
                 color: #FFF;
 
-                &.active{
-                    position: relative;
-                    color: $red;
-                    &:after{
-                        content: '';
-                        z-index: -2;
-                        background: #FFF;
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        width: calc(100% + 28px);
-                        margin-left: -14px;
-                        margin-top: -5px;
-                        height: calc(100% + 10px);
+                padding: 3px 15px;
+                position: relative;
+                @include transition(.3s);
 
-                    }
-                }
 
                 &:before{
                     content: '';
                     width: 1px;
                     height: 12px;
                     background: #FFF;
-                    display: inline-block;
+                    display: block;
                     font-size: 14px;
+                    position: absolute;
                     margin-right: 10px;
+                    top: 5px;
                 }
             }
 
+            &.current_page_item, &:hover{
+
+                a{
+                    position: relative;
+                    color: $red;
+                    text-decoration: none;
+                    background: #FFF;
+                }
+            }
             &:first-child{
                 a{
                     &:before{
@@ -201,13 +204,18 @@ img{
     }
 }
 
-.footer{
-    position: fixed;
-    bottom: 50px;
+.footer-desk{
     color: #FFF;
     font-size: 14px;
     line-height: 17px;
     opacity: .9;
+    margin-top: 30px;
+
+    &.home{
+        position: fixed;
+        bottom: 50px;
+        margin-top: 0;
+    }
 }
 
 .white{
@@ -218,6 +226,7 @@ img{
     background: #FFF;
     padding: 60px;
     position: relative;
+    z-index: 3;
 
     .button-back{
         position: absolute;
@@ -275,7 +284,7 @@ ul{
     margin-top: -100px;
     height: calc(100vh - 120px);
     padding-top: 100px;
-    overflow: auto;
+    overflow-y: auto;
 
     .item-equipe{
         margin-bottom: 15px;

@@ -64,6 +64,13 @@ $avatarID = get_field('avatar');
                     </div>
 
                 </div>
+
+                <div class="hidden-sm hidden-xs">
+                    <div class="footer-desk">
+                        Forstone Mentions légales<br/>
+                        Réalisation du site : M21 Production
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 col-md-offset-1">
                 <div class="container-equipe white content-wysiwyg">
@@ -211,16 +218,6 @@ $avatarID = get_field('avatar');
                         </ul>
                 </div>
 
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 hidden-sm hidden-xs">
-                <div class="footer">
-                    Forstone Mentions légales<br/>
-                    Réalisation du site : M21 Production
-                </div>
             </div>
         </div>
     </div>
