@@ -573,7 +573,7 @@ body{
                 left: 0;
                 height: 50px;
                 top: -10px;
-                @include rotate(2deg);
+                @include rotate(-2deg);
                 background: #FFF;
             }
 
@@ -585,7 +585,7 @@ body{
                 left: 0;
                 height: 50px;
                 bottom: -10px;
-                @include rotate(-2deg);
+                @include rotate(2deg);
                 background: #FFF;
 
             }

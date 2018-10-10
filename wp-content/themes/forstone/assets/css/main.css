@@ -9398,10 +9398,10 @@ body {
     left: 0;
     height: 50px;
     top: -10px;
-    -webkit-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
     background: #FFF;
   }
   /* line 580, ../scss/main.scss */
@@ -9413,10 +9413,10 @@ body {
     left: 0;
     height: 50px;
     bottom: -10px;
-    -webkit-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
     background: #FFF;
   }
 
