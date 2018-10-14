@@ -149,6 +149,12 @@ a:focus{
 }
 
 .nav-home{
+
+    @media (min-width: 768px) {
+        position: fixed;
+        top: 50%;
+        @include translate(0, -50%);
+    }
     li{
         display: block;
         margin-bottom: 15px;
