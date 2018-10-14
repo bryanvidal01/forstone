@@ -228,10 +228,15 @@ a:focus{
     position: relative;
     z-index: 3;
 
+    .avatar{
+        margin-bottom: 20px;
+        display: block;
+    }
+
     .button-back{
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 20px;
+        top: 20px;
         z-index: 3;
         font-weight: 500;
         font-size: 14px;
@@ -347,7 +352,6 @@ ul{
     .sub-info{
         margin-top: 10px;
     }
-
 }
 
 .content{

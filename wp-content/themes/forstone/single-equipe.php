@@ -23,7 +23,7 @@ $avatarID = get_field('avatar');
 <div class="page-container home page-cms">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="background-white">
                     <a href="<?php echo get_site_url(); ?>" class="button-back">
                         <?php echo __('retour', 'orizon'); ?>
@@ -72,7 +72,7 @@ $avatarID = get_field('avatar');
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-1">
+            <div class="col-md-6">
                 <div class="container-equipe white content-wysiwyg">
                         <?php if ($textContent): ?>
                         <?php echo $textContent; ?>

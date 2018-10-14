@@ -15,7 +15,7 @@ $content = get_field('content');
 <div class="page-container home page-cms">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="background-white">
                     <?php if ($title): ?>
                         <div class="title">
@@ -38,7 +38,7 @@ $content = get_field('content');
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-1">
+            <div class="col-md-6">
                 <div class="container-equipe">
                     <div class="title white">
                         L'équipe
