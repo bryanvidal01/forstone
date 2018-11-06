@@ -19,7 +19,7 @@ $intro = get_field('introduction');
             <div class="col-sm-6">
                 <?php if ($intro): ?>
                     <div class="intro-home">
-                        Forstone vous accompagne et répond parfaitement a vos besoins.
+                        <?php echo $intro; ?>
                     </div>
                 <?php endif; ?>
             </div>
