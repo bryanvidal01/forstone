@@ -1,6 +1,6 @@
 {
     "key": "group_5bb0020be4b7f",
-    "title": "Equipe",
+    "title": "Contenu",
     "fields": [
         {
             "key": "field_5bb00212faf51",
@@ -47,6 +47,13 @@
                 "operator": "==",
                 "value": "pages\/equipe.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "pages\/etudes.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -57,5 +64,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1538265083
+    "modified": 1540878923
 }

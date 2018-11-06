@@ -45,6 +45,18 @@ function create_post_type() {
 	  'menu_icon' => 'dashicons-groups'
     )
   );
+
+  register_post_type( 'etudes',
+    array(
+      'labels' => array(
+        'name' => __( 'Études' ),
+        'singular_name' => __( 'Études' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+	  'menu_icon' => 'dashicons-groups'
+    )
+  );
 }
 add_action( 'init', 'create_post_type' );
 
