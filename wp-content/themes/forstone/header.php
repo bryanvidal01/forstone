@@ -12,6 +12,10 @@
     <?php wp_head(); ?>
   </head>
 
+  <?php
+  the_post();
+  $currentId = get_the_id(); ?>
+
   <div class="header">
       <div class="container">
           <div class="row">
@@ -32,12 +36,12 @@
                   <div class="switch-lang">
                       <ul>
                           <li>
-                              <a href="#">
+                              <a href="?lang=en" <?php echo (isset($_GET['lang']) && $_GET['lang'] == "en") ? 'class="active"' : ""; ?>>
                                   EN
                               </a>
                           </li>
                           <li>
-                              <a href="#" class="active">
+                              <a href="?lang=fr" <?php echo (!isset($_GET['lang']) || $_GET['lang'] != "en") ? 'class="active"' : ""; ?>>
                                   FR
                               </a>
                           </li>

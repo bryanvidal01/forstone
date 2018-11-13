@@ -9094,7 +9094,7 @@ ul li {
 /* line 294, ../scss/main.scss */
 .container-equipe {
   margin-top: -100px;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 123px);
   padding-top: 100px;
   overflow-y: auto;
 }
