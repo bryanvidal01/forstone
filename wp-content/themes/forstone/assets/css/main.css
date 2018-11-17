@@ -9567,29 +9567,31 @@ body {
   .container-equipe {
     height: auto;
     overflow: hidden;
+    margin-top: 0px;
     text-align: center;
+    padding-top: 0;
   }
-  /* line 732, ../scss/main.scss */
+  /* line 734, ../scss/main.scss */
   .container-equipe ul {
     padding-left: 0;
   }
 
-  /* line 737, ../scss/main.scss */
+  /* line 739, ../scss/main.scss */
   .container-equipe .item-equipe .content-team .link-more {
     display: inline-block;
   }
 
-  /* line 741, ../scss/main.scss */
+  /* line 743, ../scss/main.scss */
   .container-equipe .item-equipe {
     margin-bottom: 35px;
   }
 
-  /* line 745, ../scss/main.scss */
+  /* line 747, ../scss/main.scss */
   .title {
     text-align: left;
   }
 
-  /* line 749, ../scss/main.scss */
+  /* line 751, ../scss/main.scss */
   .contact-footer {
     position: fixed;
     bottom: 0;
@@ -9604,19 +9606,19 @@ body {
     font-size: 17px;
   }
 
-  /* line 763, ../scss/main.scss */
+  /* line 765, ../scss/main.scss */
   body {
     padding-bottom: 35px;
   }
 
-  /* line 769, ../scss/main.scss */
+  /* line 771, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
     left: -22px;
     top: 5px;
   }
-  /* line 777, ../scss/main.scss */
+  /* line 779, ../scss/main.scss */
   .nav-home li a:hover:before {
     width: 11px;
     height: 11px;
@@ -9624,7 +9626,7 @@ body {
     top: 5px;
   }
 
-  /* line 786, ../scss/main.scss */
+  /* line 788, ../scss/main.scss */
   .header .menu ul li a.active:after, .header .menu ul li a:after {
     margin-left: 5px;
     top: 9px;
