@@ -39,8 +39,10 @@ $intro = get_field('introduction');
         <div class="row">
             <div class="col-sm-6 hidden-xs hidden-sm">
                 <div class="footer-desk home">
-                    Forstone Mentions légales <br>
-                    Réalisation du site : M21 Production
+                    Forstone -
+                    <a href="<?php echo get_field('page_contact', 'options'); ?>">
+                        <?php echo __('Contactez nous', 'orizon'); ?>
+                    </a>
                 </div>
             </div>
         </div>

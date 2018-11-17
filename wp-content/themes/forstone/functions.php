@@ -73,3 +73,6 @@ function get_background($imgBackground) {
 
 	return $imgURL;
 }
+
+
+acf_add_options_page( );
