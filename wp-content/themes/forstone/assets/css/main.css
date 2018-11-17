@@ -9516,40 +9516,41 @@ body {
   .header .menu li .sub-menu li a {
     background: transparent;
     color: #444;
+    font-size: 14px;
   }
-  /* line 697, ../scss/main.scss */
+  /* line 698, ../scss/main.scss */
   .header .menu li .sub-menu li a:after {
     display: none;
   }
-  /* line 701, ../scss/main.scss */
+  /* line 702, ../scss/main.scss */
   .header .menu li .sub-menu li a:before {
-    margin-top: -2px;
+    margin-top: -1px;
     background: #444;
   }
 }
 @media (max-width: 980px) {
-  /* line 712, ../scss/main.scss */
+  /* line 713, ../scss/main.scss */
   .page-container.home .intro-home {
     display: none;
   }
 
-  /* line 717, ../scss/main.scss */
+  /* line 718, ../scss/main.scss */
   .menu-open .header .menu {
     opacity: 1;
     visibility: visible;
   }
-  /* line 722, ../scss/main.scss */
+  /* line 723, ../scss/main.scss */
   .menu-open .button-mobile {
     margin-top: 30px;
   }
-  /* line 726, ../scss/main.scss */
+  /* line 727, ../scss/main.scss */
   .menu-open .button-mobile .barre:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 729, ../scss/main.scss */
+  /* line 730, ../scss/main.scss */
   .menu-open .button-mobile .barre:nth-child(2) {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -9557,12 +9558,12 @@ body {
     transform: rotate(-45deg);
     margin-top: -7px;
   }
-  /* line 733, ../scss/main.scss */
+  /* line 734, ../scss/main.scss */
   .menu-open .button-mobile .barre:nth-child(3) {
     opacity: 0;
   }
 
-  /* line 740, ../scss/main.scss */
+  /* line 741, ../scss/main.scss */
   .footer {
     width: 100%;
     position: fixed;
@@ -9570,7 +9571,7 @@ body {
     left: 0;
     width: 100%;
   }
-  /* line 746, ../scss/main.scss */
+  /* line 747, ../scss/main.scss */
   .footer .link-contact {
     color: #FFF;
     font-size: 18px;
@@ -9588,12 +9589,12 @@ body {
     font-size: 17px;
   }
 
-  /* line 764, ../scss/main.scss */
+  /* line 765, ../scss/main.scss */
   .page-container.home {
     margin-top: 180px;
   }
 
-  /* line 768, ../scss/main.scss */
+  /* line 769, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
@@ -9601,18 +9602,18 @@ body {
     top: 5px;
   }
 
-  /* line 775, ../scss/main.scss */
+  /* line 776, ../scss/main.scss */
   .page-container.home.page-cms {
     margin-top: 10px;
   }
-  /* line 778, ../scss/main.scss */
+  /* line 779, ../scss/main.scss */
   .page-container.home.page-cms .background-white {
     width: calc(100% + 50px);
     margin-left: -25px;
     margin-top: 20px;
     margin-bottom: 70px;
   }
-  /* line 784, ../scss/main.scss */
+  /* line 785, ../scss/main.scss */
   .page-container.home.page-cms .background-white:before {
     content: '';
     position: absolute;
@@ -9628,7 +9629,7 @@ body {
     background: #FFF;
   }
 
-  /* line 798, ../scss/main.scss */
+  /* line 799, ../scss/main.scss */
   .container-equipe {
     height: auto;
     overflow: hidden;
@@ -9636,27 +9637,27 @@ body {
     text-align: center;
     padding-top: 0;
   }
-  /* line 805, ../scss/main.scss */
+  /* line 806, ../scss/main.scss */
   .container-equipe ul {
     padding-left: 0;
   }
 
-  /* line 810, ../scss/main.scss */
+  /* line 811, ../scss/main.scss */
   .container-equipe .item-equipe .content-team .link-more {
     display: inline-block;
   }
 
-  /* line 814, ../scss/main.scss */
+  /* line 815, ../scss/main.scss */
   .container-equipe .item-equipe {
     margin-bottom: 35px;
   }
 
-  /* line 818, ../scss/main.scss */
+  /* line 819, ../scss/main.scss */
   .title {
     text-align: left;
   }
 
-  /* line 822, ../scss/main.scss */
+  /* line 823, ../scss/main.scss */
   .contact-footer {
     position: fixed;
     bottom: 0;
@@ -9671,19 +9672,19 @@ body {
     font-size: 17px;
   }
 
-  /* line 836, ../scss/main.scss */
+  /* line 837, ../scss/main.scss */
   body {
     padding-bottom: 35px;
   }
 
-  /* line 842, ../scss/main.scss */
+  /* line 843, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
     left: -22px;
     top: 5px;
   }
-  /* line 850, ../scss/main.scss */
+  /* line 851, ../scss/main.scss */
   .nav-home li a:hover:before {
     width: 11px;
     height: 11px;
@@ -9691,7 +9692,7 @@ body {
     top: 5px;
   }
 
-  /* line 859, ../scss/main.scss */
+  /* line 860, ../scss/main.scss */
   .header .menu ul li a.active:after, .header .menu ul li a:after {
     margin-left: 5px;
     top: 9px;
