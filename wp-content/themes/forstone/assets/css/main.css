@@ -9695,6 +9695,6 @@ body {
   /* line 860, ../scss/main.scss */
   .header .menu ul li a.active:after, .header .menu ul li a:after {
     margin-left: 5px;
-    top: 9px;
+    top: 8px;
   }
 }
