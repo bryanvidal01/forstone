@@ -642,6 +642,70 @@ body{
             }
         }
     }
+
+    .header .menu li{
+
+        a{
+            background: transparent !important;
+        }
+
+        &.current_page_item{
+            a{
+                color: #333;
+            }
+        }
+
+        &.menu-item-has-children{
+            a{
+                position: relative;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    display: block;
+                    background-size: 100%;
+                    background-image: url('../images/arrow.png');
+                    background-color: transparent;
+                    right: -8px;
+                    top: 11px;
+                }
+            }
+        }
+
+        .sub-menu{
+            left: 0;
+            display: block;
+            border: 0;
+            background: transparent;
+            width: 100%;
+            padding: 0;
+            padding-left: 20px;
+            display: block;
+            position: relative;
+            display: none;
+
+            li{
+                padding: 0;
+                margin: 4px 0;
+
+                a{
+                    background: transparent;
+                    color: #444;
+
+                    &:after{
+                        display: none;
+                    }
+
+                    &:before{
+                        margin-top: -2px;
+                        background: #444;
+                    }
+                }
+            }
+        }
+    }
 }
 @media (max-width: 980px) {
 
