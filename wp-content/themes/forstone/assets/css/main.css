@@ -9057,7 +9057,7 @@ a:focus {
 /* line 268, ../scss/main.scss */
 .footer-desk a {
   color: #FFF;
-  padding: 6px;
+  padding: 4px 6px;
 }
 /* line 272, ../scss/main.scss */
 .footer-desk a:hover {
