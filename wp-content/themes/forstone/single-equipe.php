@@ -25,7 +25,7 @@ $avatarID = get_field('avatar');
         <div class="row">
             <div class="col-md-6">
                 <div class="background-white">
-                    <a href="<?php echo get_site_url(); ?>" class="button-back">
+                    <a href="<?php echo get_field('page_equipe', 'option'); ?>" class="button-back">
                         <?php echo __('retour', 'orizon'); ?>
                     </a>
                     <div class="row">

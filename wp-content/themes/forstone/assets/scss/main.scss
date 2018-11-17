@@ -192,7 +192,7 @@ a:focus{
 
 .nav-home{
 
-    @media (min-width: 768px) {
+    @media (min-width: 1090px) {
         position: fixed;
         top: 50%;
         @include translate(0, -50%);
@@ -202,7 +202,7 @@ a:focus{
         margin-bottom: 15px;
         a{
             color: #FFF;
-            font-size: 18px;
+            font-size: 16px;
             text-transform: uppercase;
             @include transition(.3s);
             position: relative;
@@ -214,7 +214,7 @@ a:focus{
                 width: 22px;
                 height: 22px;
                 left: -30px;
-                top: 0px;
+                top: -1px;
                 background: $red;
                 @include transition(.3s);
                 position: absolute;
@@ -315,7 +315,7 @@ a:focus{
     color: #333;
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     &:before{
         content: '';
@@ -345,7 +345,7 @@ ul{
     overflow-y: auto;
 
     .item-equipe{
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         .image-avatar{
             max-width: 100%;
             width: auto;
@@ -358,23 +358,28 @@ ul{
         .content-team{
             margin-top: 10px;
             .name{
-                font-size: 22px;
+                font-size: 19px;
                 font-weight: 600;
                 color: #FFF;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: none;
+                }
             }
 
             .poste{
                 color: #FFF;
-                font-size: 18px;
+                font-size: 14px;
             }
 
             .link-more{
                 color: #FFF;
-                font-size: 18px;
+                font-size: 14px;
                 display: block;
                 margin-top: 10px;
                 position: relative;
-                padding-left: 25px;
+                padding-left: 16px;
 
                 &:before{
                     content: '';
@@ -383,7 +388,12 @@ ul{
                     background: $red;
                     position: absolute;
                     left: 0;
-                    top: 8px;
+                    top: 4px;
+                }
+
+                &:hover{
+                    color: $red;
+                    text-decoration: none;
                 }
             }
         }
@@ -395,15 +405,19 @@ ul{
     padding-left: 15px;
     margin-bottom: 20px;
     .name{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .poste{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .sub-info{
         margin-top: 10px;
+
+        p{
+            font-size: 14px;
+        }
     }
 }
 
@@ -428,9 +442,6 @@ body{
         font-weight: 500;
         margin-bottom: 20px;
 
-
-
-
         &:before{
             content: '';
             position: absolute;
@@ -438,7 +449,7 @@ body{
             height: 10px;
             background: $red;
             left: 0;
-            top: 7px;
+            top: 5px;
         }
     }
 
@@ -543,7 +554,7 @@ body{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
     .header{
         background: transparent;
 
@@ -657,11 +668,25 @@ body{
 
     .footer{
         width: 100%;
-
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100%;
         .link-contact{
             color: #FFF;
             font-size: 18px;
             text-transform: uppercase;
+            position: fixed;
+            bottom: 0;
+            background: #333;
+            border-bottom: 3px #b71d21 solid;
+            text-align: center;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-transform: uppercase;
+            color: #FFF;
+            font-size: 17px;
         }
     }
 
@@ -695,19 +720,6 @@ body{
                 top: -10px;
                 @include rotate(-2deg);
                 background: #FFF;
-            }
-
-            &:after{
-                content: '';
-                position: absolute;
-                width: calc(100% + 40px);
-                margin-left: -20px;
-                left: 0;
-                height: 50px;
-                bottom: -10px;
-                @include rotate(2deg);
-                background: #FFF;
-
             }
         }
     }
@@ -750,5 +762,29 @@ body{
 
     body{
         padding-bottom: 35px;
+    }
+
+
+    .nav-home li a{
+        &:before{
+            width: 11px;
+            height: 11px;
+            left: -22px;
+            top: 5px;
+        }
+
+        &:hover{
+            &:before{
+                width: 11px;
+                height: 11px;
+                left: -22px;
+                top: 5px;
+            }
+        }
+    }
+
+    .header .menu ul li a.active:after, .header .menu ul li a:after{
+        margin-left: 5px;
+        top: 9px;
     }
 }
