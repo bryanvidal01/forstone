@@ -267,7 +267,13 @@ a:focus{
 
     a{
         color: #FFF;
-        text-decoration: underline;
+        padding: 10px;
+
+        &:hover{
+            background: #FFF;
+            color: $red;
+            text-decoration: none;
+        }
     }
 }
 
