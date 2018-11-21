@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5bb003e544fc3",
-            "label": "Poste occup\u00e9",
+            "label": "Description",
             "name": "current_post",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5bb003fd44fc4",
-            "label": "Avatar",
+            "label": "Miniature",
             "name": "avatar",
             "type": "image",
             "instructions": "",
@@ -47,7 +47,7 @@
         },
         {
             "key": "field_5bb0075f739fc",
-            "label": "Informations de contact",
+            "label": "Informations",
             "name": "informations_contact",
             "type": "wysiwyg",
             "instructions": "",
@@ -65,7 +65,7 @@
         },
         {
             "key": "field_5bb007da2f0a1",
-            "label": "Biographie",
+            "label": "Texte de gauche",
             "name": "biography",
             "type": "wysiwyg",
             "instructions": "",
@@ -169,7 +169,28 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "etudes"
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "metiers"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "competences"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "references"
             }
         ]
     ],
@@ -181,5 +202,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1540879148
+    "modified": 1542832234
 }

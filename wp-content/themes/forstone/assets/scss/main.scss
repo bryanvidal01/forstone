@@ -708,6 +708,16 @@ body{
         }
     }
 }
+
+.img-ref{
+    max-width: 100%;
+
+    @include scale(1);
+    @include transition(.4s);
+    &:hover{
+        @include scale(1.04);
+    }
+}
 @media (max-width: 980px) {
 
     .page-container.home .intro-home{

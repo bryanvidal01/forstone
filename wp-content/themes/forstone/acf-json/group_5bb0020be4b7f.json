@@ -52,7 +52,14 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "pages\/etudes.php"
+                "value": "pages\/metiers.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "pages\/competences.php"
             }
         ]
     ],
@@ -64,5 +71,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1540878923
+    "modified": 1542830155
 }

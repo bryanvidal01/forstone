@@ -46,11 +46,35 @@ function create_post_type() {
     )
   );
 
-  register_post_type( 'etudes',
+  register_post_type( 'metiers',
     array(
       'labels' => array(
-        'name' => __( 'Études' ),
-        'singular_name' => __( 'Études' )
+        'name' => __( 'Métiers' ),
+        'singular_name' => __( 'Métier' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+	  'menu_icon' => 'dashicons-groups'
+    )
+  );
+
+  register_post_type( 'competences',
+    array(
+      'labels' => array(
+        'name' => __( 'Compétences' ),
+        'singular_name' => __( 'Compétence' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+	  'menu_icon' => 'dashicons-groups'
+    )
+  );
+
+  register_post_type( 'references',
+    array(
+      'labels' => array(
+        'name' => __( 'Références' ),
+        'singular_name' => __( 'Référence' )
       ),
       'public' => true,
       'has_archive' => true,

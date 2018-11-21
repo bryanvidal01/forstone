@@ -1,7 +1,8 @@
 <?php
 /*
-Template Name: Etudes
+Template Name: Metiers
 */
+
 
 $imgBackground = get_field('image_background');
 $title = get_field('title');
@@ -43,12 +44,11 @@ $content = get_field('content');
             <div class="col-md-6">
                 <div class="container-equipe">
                     <div class="title white">
-                        Études
+                        <?php echo get_the_title(); ?>
                     </div>
-
                         <?php
                         $args = array(
-                        	'post_type' => 'etudes',
+                        	'post_type' => 'metiers',
                         	'posts_per_page' => -1,
                             'orderby' => 'date',
                             'order' => 'ASC'
