@@ -711,7 +711,8 @@ body{
 
 .img-ref{
     max-width: 100%;
-
+    margin-bottom: 20px;
+    
     @include scale(1);
     @include transition(.4s);
     &:hover{
