@@ -13,6 +13,7 @@ $content = get_field('content');
 <div class="background-page" style="background-image: url('<?php echo get_background($imgBackground); ?>');">
 </div>
 
+
 <div class="page-container home page-cms">
     <div class="container">
         <div class="row">
