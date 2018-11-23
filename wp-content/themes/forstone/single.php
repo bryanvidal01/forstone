@@ -23,7 +23,7 @@ $postType = get_post_type($post);
 </div>
 
 <div class="page-container home page-cms">
-    <div class="container">
+    <div class="container-fluid container-site">
         <div class="row">
             <div class="col-md-6">
                 <div class="background-white">

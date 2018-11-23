@@ -14,7 +14,7 @@ $intro = get_field('introduction');
 </div>
 
 <div class="page-container home">
-    <div class="container">
+    <div class="container-fluid container-site">
         <div class="row">
             <div class="col-sm-6">
                 <?php if ($intro): ?>
