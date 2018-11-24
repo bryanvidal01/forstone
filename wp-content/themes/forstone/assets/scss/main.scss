@@ -350,6 +350,10 @@ ul{
     padding-top: 100px;
     overflow-y: auto;
 
+    p{
+        text-align: justify;
+    }
+
     .item-equipe{
         margin-bottom: 30px;
         .image-avatar{
@@ -730,6 +734,14 @@ body{
         display: none;
     }
 
+    .container-equipe .item-equipe .content-team{
+        margin-top: 5px;
+    }
+
+    .container-equipe .item-equipe .content-team .link-more{
+        margin-top: 2px;
+    }
+
     .menu-open{
         .header .menu{
             opacity: 1;
@@ -839,14 +851,14 @@ body{
     .contact-footer{
         position: fixed;
         bottom: 0;
-        background: #333;
+        background: #FFF;
         border-bottom: 3px $red solid;
         text-align: center;
         left: 0;
         width: 100%;
         padding: 10px 0;
         text-transform: uppercase;
-        color: #FFF;
+        color: #333;
         font-size: 17px;
     }
 
