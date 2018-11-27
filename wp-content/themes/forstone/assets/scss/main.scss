@@ -110,6 +110,7 @@ a:focus{
                         color: #000;
                         padding-left: 10px;
                         font-size: 12px;
+                        text-transform: none;
 
                         &:hover{
                             color: $red;
@@ -889,4 +890,26 @@ body{
         margin-left: 5px;
         top: 8px;
     }
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
