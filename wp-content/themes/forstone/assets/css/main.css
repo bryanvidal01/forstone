@@ -9388,7 +9388,7 @@ body {
   color: #FFF;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 991px) {
   /* line 571, ../scss/main.scss */
   .header {
     background: transparent;
@@ -9563,7 +9563,7 @@ body {
   max-width: 1170px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 991px) {
   /* line 736, ../scss/main.scss */
   .page-container.home .intro-home {
     display: none;
