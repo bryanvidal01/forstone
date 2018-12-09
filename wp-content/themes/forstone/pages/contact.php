@@ -6,7 +6,7 @@ Template Name: Contact
 $imgBackground = get_field('image_background');
 $title = get_field('title');
 $content = get_field('content');
-
+$imgMap = get_field('map_img');
 the_post();
 ?>
 
@@ -25,31 +25,25 @@ the_post();
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <img src="http://fakeimg.pl/400x400" alt="">
+                            <img src="<?php echo wp_get_attachment_image_src($imgMap, '200x200')[0]; ?>" alt="" style="margin-bottom: 20px;">
                         </div>
                         <div class="col-sm-6">
-                            <p>
-                                Téléphone : <br/>
-                                +33 (0)1 56 77 98 54
-                            </p>
-                            <p>
-                                6, rue du Colonel Delorme<br/>
-                                93100 Montreuil
-                            </p>
-                            <p>
-                                Accès : <br/>
-                                Métro de coirx de chaveaux<br/>
-                                RER A : Vincennes
-                            </p>
+                            <?php echo get_field('contact_info'); ?>
                         </div>
                     </div>
                 </div>
                 <div class="hidden-xs hidden-sm">
                     <div class="footer-desk">
                         Forstone -
-                        <a href="<?php echo get_field('page_contact', 'options'); ?>">
-                            <?php echo __('Contactez nous', 'orizon'); ?>
+                        <a href="<?php echo get_field('page_mentions_legales', 'options'); ?>">
+                            <?php echo __('Mentions légales', 'orizon'); ?>
                         </a>
+                        <div style="margin-top: 10px">
+                            <?php echo __('Réalisation du site :', 'orizon'); ?>
+                            <a href="http://m21production.com" target="_blank">
+                                M21 Production
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,8 +63,19 @@ the_post();
     </div>
 </div>
 
-<a href="#" class="contact-footer visible-xs visible-sm">
-    Contact
-</a>
+<div class="visible-xs visible-sm text-center" >
+    <div class="footer-desk">
+        Forstone -
+        <a href="<?php echo get_field('page_mentions_legales', 'options'); ?>">
+            <?php echo __('Mentions légales', 'orizon'); ?>
+        </a>
+        <div style="margin-top: 10px">
+            <?php echo __('Réalisation du site :', 'orizon'); ?>
+            <a href="http://m21production.com" target="_blank">
+                M21 Production
+            </a>
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>
