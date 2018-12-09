@@ -28,7 +28,12 @@
               </div>
               <div class="col-md-6 col-sm-4 col-xs-8">
                   <a href="<?php echo get_site_url(); ?>" class="container-logo">
-                      <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" class="logo" alt="">
+                      <div class="visible-md visible-lg">
+                          <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" class="logo" alt="">
+                      </div>
+                      <div class="visible-xs visible-sm">
+                          <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-mobile.png" class="logo" alt="">
+                      </div>
                   </a>
               </div>
 
