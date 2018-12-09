@@ -74,9 +74,9 @@ $content = get_field('content');
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="content-team">
-                                                <div class="name">
+                                                <a href="<?php echo get_the_permalink(); ?>" class="name">
                                                     <?php echo get_the_title(); ?>
-                                                </div>
+                                                </a>
                                                 <?php if ($currentPost): ?>
                                                     <div class="poste">
                                                         <?php echo $currentPost; ?>
