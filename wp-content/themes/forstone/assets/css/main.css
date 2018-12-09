@@ -9710,35 +9710,27 @@ body {
   .container-equipe .item-equipe .image-avatar {
     width: 100%;
   }
-  /* line 867, ../scss/main.scss */
-  .container-equipe .item-equipe .content-team .link-more {
-    margin-left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
-  /* line 873, ../scss/main.scss */
+  /* line 869, ../scss/main.scss */
   .container-equipe ul {
     padding-left: 0;
   }
 
-  /* line 878, ../scss/main.scss */
+  /* line 874, ../scss/main.scss */
   .container-equipe .item-equipe .content-team .link-more {
     display: inline-block;
   }
 
-  /* line 882, ../scss/main.scss */
+  /* line 878, ../scss/main.scss */
   .container-equipe .item-equipe {
     margin-bottom: 35px;
   }
 
-  /* line 886, ../scss/main.scss */
+  /* line 882, ../scss/main.scss */
   .title {
     text-align: left;
   }
 
-  /* line 890, ../scss/main.scss */
+  /* line 886, ../scss/main.scss */
   .contact-footer {
     position: fixed;
     bottom: 0;
@@ -9753,19 +9745,19 @@ body {
     font-size: 17px;
   }
 
-  /* line 904, ../scss/main.scss */
+  /* line 900, ../scss/main.scss */
   body {
     padding-bottom: 35px;
   }
 
-  /* line 910, ../scss/main.scss */
+  /* line 906, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
     left: -22px;
     top: 5px;
   }
-  /* line 918, ../scss/main.scss */
+  /* line 914, ../scss/main.scss */
   .nav-home li a:hover:before {
     width: 11px;
     height: 11px;
@@ -9773,32 +9765,32 @@ body {
     top: 5px;
   }
 
-  /* line 927, ../scss/main.scss */
+  /* line 923, ../scss/main.scss */
   .header .menu ul li a.active:after, .header .menu ul li a:after {
     margin-left: 5px;
     top: 8px;
   }
 }
 /* width */
-/* line 936, ../scss/main.scss */
+/* line 932, ../scss/main.scss */
 ::-webkit-scrollbar {
   width: 2px;
 }
 
 /* Track */
-/* line 941, ../scss/main.scss */
+/* line 937, ../scss/main.scss */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-/* line 946, ../scss/main.scss */
+/* line 942, ../scss/main.scss */
 ::-webkit-scrollbar-thumb {
   background: black;
 }
 
 /* Handle on hover */
-/* line 951, ../scss/main.scss */
+/* line 947, ../scss/main.scss */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
