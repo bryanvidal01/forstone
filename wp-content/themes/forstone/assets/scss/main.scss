@@ -39,6 +39,10 @@ a:focus{
     }
 }
 
+.img-full-width{
+    margin-bottom: 15px;
+}
+
 .header{
     position: fixed;
     background: rgba(#FFF, .95);
@@ -302,6 +306,14 @@ a:focus{
     position: relative;
     z-index: 3;
 
+    &.content-wysiwyg{
+        color: #333;
+
+        h2{
+            color: #333;
+        }
+    }
+
     .avatar{
         margin-bottom: 20px;
         display: block;
@@ -345,7 +357,7 @@ a:focus{
         height: 10px;
         background: $red;
         left: 0;
-        top: 10px;
+        top: 8px;
     }
 }
 
@@ -456,6 +468,7 @@ ul{
 body{
     overflow-x: hidden;
 }
+
 
 .content-wysiwyg{
     h2{

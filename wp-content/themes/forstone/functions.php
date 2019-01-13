@@ -29,6 +29,7 @@ register_nav_menus( array(
 // Thumbsize
 add_image_size( '1900x1400', 1900, 1400, true);
 add_image_size( '200x200', 200, 200, true );
+add_image_size( '1600x600', 1600, 600, true );
 
 
 // POST type
