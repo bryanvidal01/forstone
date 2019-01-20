@@ -296,6 +296,52 @@ a:focus{
     }
 }
 
+.cookie-message{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #222;
+    color: #FFF;
+    width: 100%;
+    padding: 10px;
+    z-index: 300;
+
+    .button-red, .button-red-border{
+        margin-left: 20px;
+    }
+}
+
+.button-red{
+    background: $red;
+    color: #FFF;
+    padding: 10px;
+    display: inline-block;
+    @include transition(.3s);
+
+    &:hover{
+        background: #FFF;
+        color: #222;
+        text-decoration: none;
+    }
+}
+.button-red-border{
+    border: 2px solid $red;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: inline-block;
+
+    &:hover{
+        background: $red;
+
+        &:hover{
+            color: #FFF;
+            text-decoration: none;
+            @include transition(.3s);
+        }
+    }
+}
+
 .white{
     color: #FFF
 }
@@ -305,6 +351,29 @@ a:focus{
     padding: 60px;
     position: relative;
     z-index: 3;
+
+    .content{
+        a{
+            color: $red;
+            &:hover{
+                color: $red;
+                text-decoration: underline;
+            }
+        }
+
+        ul{
+            padding-left: 0;
+            li{
+                position: relative;
+
+                &:before{
+                    content: '✔';
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 
     &.content-wysiwyg{
         color: #333;
@@ -763,7 +832,11 @@ body{
         }
     }
 }
-
+.single{
+    .background-white{
+        padding-top: 75px;
+    }
+}
 .img-ref{
     max-width: 100%;
     margin-bottom: 20px;

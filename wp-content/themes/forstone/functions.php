@@ -38,7 +38,7 @@ function create_post_type() {
   register_post_type( 'equipe',
     array(
       'labels' => array(
-        'name' => __( 'Équipes' ),
+        'name' => __( 'Équipe' ),
         'singular_name' => __( 'Équipe' )
       ),
       'public' => true,
@@ -50,8 +50,8 @@ function create_post_type() {
   register_post_type( 'metiers',
     array(
       'labels' => array(
-        'name' => __( 'Métiers' ),
-        'singular_name' => __( 'Métier' )
+        'name' => __( 'Services' ),
+        'singular_name' => __( 'Service' )
       ),
       'public' => true,
       'has_archive' => true,
@@ -62,8 +62,8 @@ function create_post_type() {
   register_post_type( 'competences',
     array(
       'labels' => array(
-        'name' => __( 'Compétences' ),
-        'singular_name' => __( 'Compétence' )
+        'name' => __( 'Expertises' ),
+        'singular_name' => __( 'Expertises' )
       ),
       'public' => true,
       'has_archive' => true,
