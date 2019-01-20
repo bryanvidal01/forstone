@@ -109,7 +109,7 @@ $content = get_field('content');
     </div>
 </div>
 
-<a href="#" class="contact-footer visible-xs visible-sm">
+<a href="<?php echo get_field('page_contact', 'options'); ?>" class="contact-footer visible-xs visible-sm">
     Contact
 </a>
 

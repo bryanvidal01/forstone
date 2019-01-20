@@ -77,7 +77,7 @@
                       <a href="#" class="button-red validate-cookie">
                           Accepter les cookies
                       </a>
-                      <a href="#" class="button-red-border">
+                      <a href="<?php echo get_site_url(); ?>/mentions-legales/" class="button-red-border">
                           En savoir plus
                       </a>
                   </div>
