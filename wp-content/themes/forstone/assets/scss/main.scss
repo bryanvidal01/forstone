@@ -571,6 +571,7 @@ body{
         li{
             &:before{
                 content: '';
+                font-size: 0;
                 width: 10px;
                 height: 10px;
                 background: #666;
