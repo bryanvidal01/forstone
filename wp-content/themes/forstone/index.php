@@ -28,7 +28,7 @@ $intro = get_field('introduction');
             <div class="col-sm-6 col-sm-offset-6">
                 <div class="nav-home">
                     <?php echo wp_nav_menu([
-                        'menu'=>'home',
+                        'menu'=> ($_GET['lang'] == 'fr') ? 'home' : 'home-en',
                         'menu_class'=>''
                     ]); ?>
                 </div>
