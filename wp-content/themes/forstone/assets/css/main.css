@@ -9860,21 +9860,22 @@ body {
     text-transform: uppercase;
     color: #333;
     font-size: 17px;
+    z-index: 30;
   }
 
-  /* line 1010, ../scss/main.scss */
+  /* line 1011, ../scss/main.scss */
   body {
     padding-bottom: 35px;
   }
 
-  /* line 1016, ../scss/main.scss */
+  /* line 1017, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
     left: -22px;
     top: 5px;
   }
-  /* line 1024, ../scss/main.scss */
+  /* line 1025, ../scss/main.scss */
   .nav-home li a:hover:before {
     width: 11px;
     height: 11px;
@@ -9882,32 +9883,32 @@ body {
     top: 5px;
   }
 
-  /* line 1033, ../scss/main.scss */
+  /* line 1034, ../scss/main.scss */
   .header .menu ul li a.active:after, .header .menu ul li a:after {
     margin-left: 5px;
     top: 8px;
   }
 }
 /* width */
-/* line 1042, ../scss/main.scss */
+/* line 1043, ../scss/main.scss */
 ::-webkit-scrollbar {
   width: 2px;
 }
 
 /* Track */
-/* line 1047, ../scss/main.scss */
+/* line 1048, ../scss/main.scss */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-/* line 1052, ../scss/main.scss */
+/* line 1053, ../scss/main.scss */
 ::-webkit-scrollbar-thumb {
   background: black;
 }
 
 /* Handle on hover */
-/* line 1057, ../scss/main.scss */
+/* line 1058, ../scss/main.scss */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
