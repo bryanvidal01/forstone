@@ -347,6 +347,13 @@ a:focus{
     color: #FFF
 }
 
+.page-template-competences .background-white .content ul li:before{
+    content: '✔';
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
 .background-white{
     background: #FFF;
     padding: 60px;
@@ -367,11 +374,7 @@ a:focus{
             li{
                 position: relative;
 
-                &:before{
-                    content: '✔';
-                    display: inline-block;
-                    margin-right: 5px;
-                }
+
             }
         }
     }
