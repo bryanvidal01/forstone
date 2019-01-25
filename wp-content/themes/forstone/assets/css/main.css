@@ -9669,7 +9669,7 @@ body {
   padding-top: 75px;
 }
 
-/* line 847, ../scss/main.scss */
+/* line 848, ../scss/main.scss */
 .img-ref {
   max-width: 100%;
   margin-bottom: 20px;
@@ -9681,7 +9681,7 @@ body {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 853, ../scss/main.scss */
+/* line 854, ../scss/main.scss */
 .img-ref:hover {
   -webkit-transform: scale(1.04);
   -ms-transform: scale(1.04);
@@ -9689,49 +9689,54 @@ body {
   transform: scale(1.04);
 }
 
-/* line 858, ../scss/main.scss */
+/* line 859, ../scss/main.scss */
 .container-site {
   max-width: 1170px;
 }
 
 @media (max-width: 991px) {
-  /* line 864, ../scss/main.scss */
+  /* line 866, ../scss/main.scss */
+  .page-container.home.page-cabinet {
+    margin-top: 50px;
+  }
+
+  /* line 870, ../scss/main.scss */
   .page-container.home .intro-home {
     display: none;
   }
 
-  /* line 868, ../scss/main.scss */
+  /* line 874, ../scss/main.scss */
   .container-equipe .item-equipe .content-team {
     margin-top: 5px;
   }
 
-  /* line 872, ../scss/main.scss */
+  /* line 878, ../scss/main.scss */
   .container-equipe {
     padding: 0 35px;
   }
 
-  /* line 876, ../scss/main.scss */
+  /* line 882, ../scss/main.scss */
   .container-equipe .item-equipe .content-team .link-more {
     margin-top: 2px;
   }
 
-  /* line 881, ../scss/main.scss */
+  /* line 887, ../scss/main.scss */
   .menu-open .header .menu {
     opacity: 1;
     visibility: visible;
   }
-  /* line 886, ../scss/main.scss */
+  /* line 892, ../scss/main.scss */
   .menu-open .button-mobile {
     margin-top: 30px;
   }
-  /* line 890, ../scss/main.scss */
+  /* line 896, ../scss/main.scss */
   .menu-open .button-mobile .barre:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 893, ../scss/main.scss */
+  /* line 899, ../scss/main.scss */
   .menu-open .button-mobile .barre:nth-child(2) {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -9739,12 +9744,12 @@ body {
     transform: rotate(-45deg);
     margin-top: -7px;
   }
-  /* line 897, ../scss/main.scss */
+  /* line 903, ../scss/main.scss */
   .menu-open .button-mobile .barre:nth-child(3) {
     opacity: 0;
   }
 
-  /* line 904, ../scss/main.scss */
+  /* line 910, ../scss/main.scss */
   .footer {
     width: 100%;
     position: fixed;
@@ -9752,7 +9757,7 @@ body {
     left: 0;
     width: 100%;
   }
-  /* line 910, ../scss/main.scss */
+  /* line 916, ../scss/main.scss */
   .footer .link-contact {
     color: #FFF;
     font-size: 18px;
@@ -9770,12 +9775,12 @@ body {
     font-size: 17px;
   }
 
-  /* line 928, ../scss/main.scss */
+  /* line 934, ../scss/main.scss */
   .page-container.home {
     margin-top: 180px;
   }
 
-  /* line 932, ../scss/main.scss */
+  /* line 938, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
@@ -9783,18 +9788,18 @@ body {
     top: 5px;
   }
 
-  /* line 939, ../scss/main.scss */
+  /* line 945, ../scss/main.scss */
   .page-container.home.page-cms {
     margin-top: 10px;
   }
-  /* line 942, ../scss/main.scss */
+  /* line 948, ../scss/main.scss */
   .page-container.home.page-cms .background-white {
     width: calc(100% + 50px);
     margin-left: -25px;
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  /* line 948, ../scss/main.scss */
+  /* line 954, ../scss/main.scss */
   .page-container.home.page-cms .background-white:before {
     content: '';
     position: absolute;
@@ -9810,7 +9815,7 @@ body {
     background: #FFF;
   }
 
-  /* line 962, ../scss/main.scss */
+  /* line 968, ../scss/main.scss */
   .container-equipe {
     height: auto;
     overflow: hidden;
@@ -9818,36 +9823,36 @@ body {
     text-align: left;
     padding-top: 0;
   }
-  /* line 969, ../scss/main.scss */
+  /* line 975, ../scss/main.scss */
   .container-equipe .title {
     margin-bottom: 20px;
   }
-  /* line 973, ../scss/main.scss */
+  /* line 979, ../scss/main.scss */
   .container-equipe .item-equipe .image-avatar {
     width: 100%;
   }
-  /* line 978, ../scss/main.scss */
+  /* line 984, ../scss/main.scss */
   .container-equipe ul {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 984, ../scss/main.scss */
+  /* line 990, ../scss/main.scss */
   .container-equipe .item-equipe .content-team .link-more {
     display: inline-block;
   }
 
-  /* line 988, ../scss/main.scss */
+  /* line 994, ../scss/main.scss */
   .container-equipe .item-equipe {
     margin-bottom: 35px;
   }
 
-  /* line 992, ../scss/main.scss */
+  /* line 998, ../scss/main.scss */
   .title {
     text-align: left;
   }
 
-  /* line 996, ../scss/main.scss */
+  /* line 1002, ../scss/main.scss */
   .contact-footer {
     position: fixed;
     bottom: 0;
@@ -9863,19 +9868,19 @@ body {
     z-index: 30;
   }
 
-  /* line 1011, ../scss/main.scss */
+  /* line 1017, ../scss/main.scss */
   body {
     padding-bottom: 35px;
   }
 
-  /* line 1017, ../scss/main.scss */
+  /* line 1023, ../scss/main.scss */
   .nav-home li a:before {
     width: 11px;
     height: 11px;
     left: -22px;
     top: 5px;
   }
-  /* line 1025, ../scss/main.scss */
+  /* line 1031, ../scss/main.scss */
   .nav-home li a:hover:before {
     width: 11px;
     height: 11px;
@@ -9883,32 +9888,32 @@ body {
     top: 5px;
   }
 
-  /* line 1034, ../scss/main.scss */
+  /* line 1040, ../scss/main.scss */
   .header .menu ul li a.active:after, .header .menu ul li a:after {
     margin-left: 5px;
     top: 8px;
   }
 }
 /* width */
-/* line 1043, ../scss/main.scss */
+/* line 1049, ../scss/main.scss */
 ::-webkit-scrollbar {
   width: 2px;
 }
 
 /* Track */
-/* line 1048, ../scss/main.scss */
+/* line 1054, ../scss/main.scss */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-/* line 1053, ../scss/main.scss */
+/* line 1059, ../scss/main.scss */
 ::-webkit-scrollbar-thumb {
   background: black;
 }
 
 /* Handle on hover */
-/* line 1058, ../scss/main.scss */
+/* line 1064, ../scss/main.scss */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }

@@ -844,6 +844,7 @@ body{
         padding-top: 75px;
     }
 }
+
 .img-ref{
     max-width: 100%;
     margin-bottom: 20px;
@@ -860,6 +861,11 @@ body{
 }
 
 @media (max-width: 991px) {
+
+
+    .page-container.home.page-cabinet{
+        margin-top: 50px;
+    }
 
     .page-container.home .intro-home{
         display: none;
