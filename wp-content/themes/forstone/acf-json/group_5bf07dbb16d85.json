@@ -96,6 +96,25 @@
             "allow_null": 0,
             "multiple": 0,
             "allow_archives": 1
+        },
+        {
+            "key": "field_5c0d84c365685",
+            "label": "Page mentions l\u00e9gales",
+            "name": "page_mentions_legales",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
         }
     ],
     "location": [
@@ -115,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1542832070
+    "modified": 1544389847
 }
